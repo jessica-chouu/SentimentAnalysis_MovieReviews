@@ -49,8 +49,8 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 - Displayed results as positive vs. negative percentages with a simple bar chart.
 
 ## 🔍 Key Findings
-- TF-IDF + Logistic Regression achieved the highest accuracy (88.78%), followed by SVM (88.28%) and Random Forest (83.49%).
-- TF-IDF outperformed Word Embeddings, with Logistic Regression scoring 88.78% vs. 75.73%, showing better feature representation.
+- **TF-IDF + Logistic Regression achieved the highest accuracy (88.78%)**, followed by SVM (88.28%) and Random Forest (83.49%).
+- **TF-IDF outperformed Word Embeddings**, with Logistic Regression scoring 88.78% vs. 75.73%, showing better feature representation.
 - TF-IDF + LR showed balanced predictions with a high AUC of 0.96, while Word Embeddings + LR had more misclassifications and a lower AUC of 0.83.
 - LLM validation confirmed that TF-IDF features generalized better (84% precision, AUC = 0.79) vs. Word Embeddings (56% precision, AUC = 0.64).
 
@@ -58,9 +58,9 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 
 ## 🖥️ User Interface Demo
 How It Works
-1. User Input: Users enter a movie name in the input field, and the system automatically retrieves relevant reviews using the TMDb API.
-2. Sentiment Analysis: The retrieved reviews are processed using a TF-IDF vectorizer and Logistic Regression model to classify them as positive or negative.
-3. Results Display: The system presents the number of positive and negative reviews, along with a bar chart visualization of the sentiment distribution.
+1. **User Input**: Users enter a movie name in the input field, and the system automatically retrieves relevant reviews using the TMDb API.
+2. **Sentiment Analysis**: The retrieved reviews are processed using a TF-IDF vectorizer and Logistic Regression model to classify them as positive or negative.
+3. **Results Display**: The system presents the number of positive and negative reviews, along with a bar chart visualization of the sentiment distribution.
 
 ## 📌 Conclusion
 The project built a high-performing sentiment classifier using TF-IDF and Logistic Regression. With real-time TMDb integration and a user-friendly Streamlit UI, this tool automates review analysis, offering practical value to media, film, and marketing professionals.
@@ -71,12 +71,12 @@ The project built a high-performing sentiment classifier using TF-IDF and Logist
 - Explore multilingual sentiment classification to expand market coverage and global usability.
 
 ## 🛠 Technologies Used
-- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Joblib)
-- NLP (NLTK)
-- Machine Learning (Logistic Regression, SVM, Random Forest)
-- Visualization (Seaborn, Matplotlib)
-- UI Deployment (Streamlit)
-- APIs (TMDb API, OpenRouter API)
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Joblib)
+- **NLP** (NLTK)
+- **Machine Learning** (Logistic Regression, SVM, Random Forest)
+- **Visualization** (Seaborn, Matplotlib)
+- **UI Deployment** (Streamlit)
+- **APIs** (TMDb API, OpenRouter API)
 
 ## 📂 Repository Files
 - `IMDB Dataset 2.csv` – IMDb movie reviews with sentiment labels
