@@ -20,59 +20,65 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 
 ## 💡 Methodology
 1️⃣ **Data Preprocessing**
-- Standardized and cleaned text data for consistency
-- Removed duplicates and handled missing values to ensure data quality
-- Prepared sentiment labels and text for machine learning analysis
-  
-*Final dataset saved as `Cleaned_IMDB_dataset.csv`*
+- Standardized and cleaned text data for consistency.
+- Removed duplicates and handled missing values to ensure data quality.
+- Prepared sentiment labels and text for machine learning analysis.
 
 2️⃣ **Feature Selection**
-- Used **TF-IDF** and **Word Embeddings** to convert review text into machine-readable vectors
+- Used **TF-IDF** and **Word Embeddings** to convert review text into machine-readable vectors.
 
 3️⃣ **Model Training**
 - Built three models using TF-IDF features:
   - Logistic Regression
   - Support Vector Machine
   - Random Forest
-- Identified **Logistic Regression** as the top performer, then re-trained it using Word Embeddings for comparison
+- Identified **Logistic Regression** as the top performer, then re-trained it using Word Embeddings for comparison.
 
 4️⃣ **Model Evaluation**
-- Assessed model performance using **confusion matrix** and **ROC curve**
-- Used an **open-source LLM** to cross-validate predictions from both feature extraction methods
+- Assessed model performance using **confusion matrix** and **ROC curve**.
+- Used an **open-source LLM** to cross-validate predictions from both feature extraction methods.
 
 5️⃣ **Web Scraping**
-- Integrated with TMDb API to fetch real-time movie reviews by movie title
-- Parsed paginated responses, handled errors, and structured reviews into a DataFrame for use in the interface
+- Integrated with TMDb API to fetch real-time movie reviews by movie title.
+- Parsed paginated responses, handled errors, and structured reviews into a DataFrame for use in the interface.
 
 6️⃣ **User Interface Deployment**
-- Developed an interactive UI using **Streamlit** for real-time sentiment analysis
-- Connected to the TMDb API to fetch reviews based on user-input movie titles
-- Loaded a pre-trained **TF-IDF + Logistic Regression** model to classify review sentiment
-- Displayed results as positive vs. negative percentages with a simple bar chart
+- Developed an interactive UI using **Streamlit** for real-time sentiment analysis.
+- Connected to the TMDb API to fetch reviews based on user-input movie titles.
+- Loaded a pre-trained **TF-IDF + Logistic Regression** model to classify review sentiment.
+- Displayed results as positive vs. negative percentages with a simple bar chart.
 
 ## 🔍 Key Findings
-- ✅ TF-IDF + Logistic Regression achieved the highest accuracy (88.78%), with an AUC of 0.96
-- SVM and Random Forest followed at 88.28% and 83.49% respectively
-- Word Embeddings + LR underperformed, reaching only 75.73% accuracy with an AUC of 0.83
-- 🧠 LLM-based validation revealed that:
-  - TF-IDF + LR retained strong generalization: 84% avg. precision, 0.79 AUC
-  - Word Embeddings + LR dropped significantly: 56% avg. precision, 0.64 AUC
+- TF-IDF + Logistic Regression achieved the highest accuracy (88.78%), followed by SVM (88.28%) and Random Forest (83.49%).
+- TF-IDF outperformed Word Embeddings, with Logistic Regression scoring 88.78% vs. 75.73%, showing better feature representation.
+- TF-IDF + LR showed balanced predictions with a high AUC of 0.96, while Word Embeddings + LR had more misclassifications and a lower AUC of 0.83.
+- LLM validation confirmed that TF-IDF features generalized better (84% precision, AUC = 0.79) vs. Word Embeddings (56% precision, AUC = 0.64).
 
 📌 Final model selection: **TF-IDF + Logistic Regression**, based on its consistency and superior performance across both traditional evaluation and LLM validation.
 
-## 🚀 Business Recommendations
-• Use the model for real-time feedback on movie releases and trailer sentiment.
-• Extend the system to multilingual reviews to serve a global audience.• Leverage keyword frequency from positive/negative reviews to improve marketing messaging.
+## 🖥️ User Interface Demo
+How It Works
+1. User Input: Users enter a movie name in the input field, and the system automatically retrieves relevant reviews using the TMDb API.
+2. Sentiment Analysis: The retrieved reviews are processed using a TF-IDF vectorizer and Logistic Regression model to classify them as positive or negative.
+3. Results Display: The system presents the number of positive and negative reviews, along with a bar chart visualization of the sentiment distribution.
 
 ## 📌 Conclusion
-The project successfully built a high-performing sentiment classifier using TF-IDF and Logistic Regression. With real-time OMDb integration and a user-friendly Streamlit UI, this tool automates review analysis, offering practical value to media, film, and marketing professionals.
+The project built a high-performing sentiment classifier using TF-IDF and Logistic Regression. With real-time TMDb integration and a user-friendly Streamlit UI, this tool automates review analysis, offering practical value to media, film, and marketing professionals.
+
+## 🚀 Strategic Opportunities
+- Apply sentiment insights to optimize promotional timing, messaging, and competitor benchmarking.
+- Extend functionality by integrating topic modeling to extract trending themes from reviews.
+- Explore multilingual sentiment classification to expand market coverage and global usability.
 
 ## 🛠 Technologies Used
-• Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
-• NLP Tools (NLTK, WordCloud)
-• Streamlit (for UI deployment)
-• OMDb API (for real-time movie review retrieval)
+- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Joblib)
+- NLP (NLTK)
+- Machine Learning (Logistic Regression, SVM, Random Forest)
+- Visualization (Seaborn, Matplotlib)
+- UI Deployment (Streamlit)
+- APIs (TMDb API, OpenRouter API)
 
 ## 📂 Repository Files
-
-• IMDB Dataset 2.csv – IMDb movie reviews with sentiment labels• sentiment_analysis.ipynb – Jupyter notebook for training and evaluation• app.py – Streamlit interface for live predictions• logistic_model.pkl – Saved Logistic Regression model• tfidf_vectorizer.pkl – Saved TF-IDF vectorizer• README.md – Project documentation
+- `IMDB Dataset 2.csv` – IMDb movie reviews with sentiment labels
+- `imdb_sentiment_analysis.ipynb` - Main notebook for data preprocessing, model training, model evaluation, and Streamlit integration
+- `README.md` – Project documentation
