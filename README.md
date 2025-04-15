@@ -83,8 +83,8 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 
 ## 🖥️ User Interface Demo
 <p float="left">
-  <img src="Data%20Visualization/8%20-%20Streamlit%201.png" width="45%" />
-  <img src="Data%20Visualization/8%20-%20Streamlit%202.png" width="45%" />
+  <img src="Data%20Visualization/8%20-%20Streamlit%201.jpg" width="45%" />
+  <img src="Data%20Visualization/8%20-%20Streamlit%202.jpg" width="45%" />
 </p>
 
  How It Works:
