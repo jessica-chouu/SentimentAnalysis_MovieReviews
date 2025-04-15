@@ -84,7 +84,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 📍 Final model selection: **TF-IDF + Logistic Regression**, based on its consistency and superior performance across both traditional evaluation and LLM validation.
 
 ## 🖥️ User Interface Demo
-link: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysis-movie-reviews.streamlit.app/)
+ link: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysis-movie-reviews.streamlit.app/)
 <p float="left">
   <img src="Data%20Visualization/8%20-%20Streamlit%201.jpg" width="45%" />
   <img src="Data%20Visualization/8%20-%20Streamlit%202.jpg" width="45%" />
@@ -92,7 +92,7 @@ link: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysi
 
  How It Works:
 1. **User Input**: Users enter a movie name in the input field, and the system automatically retrieves relevant reviews using the TMDb API.
-2. **Sentiment Analysis**: The retrieved reviews are processed using a TF-IDF vectorizer and Logistic Regression model to classify them as positive or negative.
+2. **Sentiment Analysis**: The retrieved reviews are processed using a TF-IDF vectorizer(`tfidf_vectorizer.pkl`) and Logistic Regression model(`log_reg_model.pkl`) to classify them as positive or negative.
 3. **Results Display**: The system presents the number of positive and negative reviews, along with a bar chart visualization of the sentiment distribution.
 
 ## 📌 Conclusion
