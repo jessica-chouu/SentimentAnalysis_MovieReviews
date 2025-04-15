@@ -23,6 +23,9 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 - Standardized and cleaned text data for consistency.
 - Removed duplicates and handled missing values to ensure data quality.
 - Prepared sentiment labels and text for machine learning analysis.
+- Cleaned dataset
+  
+![Cleaned Dataset](Data Visualization/1 - cleaned dataset.png)
 
 2️⃣ **Feature Selection**
 - Used **TF-IDF** and **Word Embeddings** to convert review text into machine-readable vectors.
