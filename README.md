@@ -1,5 +1,5 @@
 # Intelligent Sentiment Analysis System for Movie Reviews
-## 📌 Project Purpose
+## 🎯 Project Purpose
 - Intelligent sentiment analysis system that can classify movie reviews as either positive or negative.
 - Leverage **NLP** and **Machine Learning** to develop a model that can automatically determine audience sentiment based on movie reviews.
 - Relevance & Impact: Huge Volume of Reviews, Decision-Making Tool, Automation through NLP
@@ -23,9 +23,8 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 - Standardized and cleaned text data for consistency.
 - Removed duplicates and handled missing values to ensure data quality.
 - Prepared sentiment labels and text for machine learning analysis.
-- Cleaned dataset
-  
-![Cleaned Dataset](Data Visualization/1 - cleaned dataset.png)
+
+📍 Image 1: [Cleaned Dataset](Data%20Visualization/1%20-%20cleaned%20dataset.png)
 
 2️⃣ **Feature Selection**
 - Used **TF-IDF** and **Word Embeddings** to convert review text into machine-readable vectors.
@@ -53,14 +52,42 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 
 ## 🔍 Key Findings
 - **TF-IDF + Logistic Regression achieved the highest accuracy (88.78%)**, followed by SVM (88.28%) and Random Forest (83.49%).
-- **TF-IDF outperformed Word Embeddings**, with Logistic Regression scoring 88.78% vs. 75.73%, showing better feature representation.
-- TF-IDF + LR showed balanced predictions with a high AUC of 0.96, while Word Embeddings + LR had more misclassifications and a lower AUC of 0.83.
-- LLM validation confirmed that TF-IDF features generalized better (84% precision, AUC = 0.79) vs. Word Embeddings (56% precision, AUC = 0.64).
+<img src="Data%20Visualization/2%20-%20Camparison%20of%20model.png" width="500"/>
 
-📌 Final model selection: **TF-IDF + Logistic Regression**, based on its consistency and superior performance across both traditional evaluation and LLM validation.
+- **TF-IDF outperformed Word Embeddings**, with Logistic Regression scoring 88.78% vs. 75.73%, showing better feature representation.
+<img src="Data%20Visualization/3%20-%20Comparison%20of%20TF%20and%20WE.png" width="500"/>
+
+- **TF-IDF + LR** showed balanced predictions with **a high AUC of 0.96**, while Word Embeddings + LR had more misclassifications and a lower AUC of 0.83.
+<p float="left">
+  <img src="Data%20Visualization/4%20-%20CM%20(TF).png" width="45%" />
+  <img src="Data%20Visualization/4%20-%20ROC%20(TF).png" width="45%" />
+</p>
+
+<p float="left">
+  <img src="Data%20Visualization/5%20-%20CM%20(WE).png" width="45%" />
+  <img src="Data%20Visualization/5%20-%20ROC%20(WE).png" width="45%" />
+</p>
+
+- **LLM validation** confirmed that **TF-IDF features generalized better** (89% precision, AUC = 0.86) vs. Word Embeddings (50% precision, AUC = 0.52).
+<p float="left">
+  <img src="Data%20Visualization/6%20-%20LLM%20CM(TF).png" width="45%" />
+  <img src="Data%20Visualization/6%20-%20LLM%20ROC(TF).png" width="45%" />
+</p>
+
+<p float="left">
+  <img src="Data%20Visualization/7%20-%20LLM%20CM(WE).png" width="45%" />
+  <img src="Data%20Visualization/7%20-%20LLM%20ROC(WE).png" width="45%" />
+</p>
+
+📍 Final model selection: **TF-IDF + Logistic Regression**, based on its consistency and superior performance across both traditional evaluation and LLM validation.
 
 ## 🖥️ User Interface Demo
-How It Works
+<p float="left">
+  <img src="Data%20Visualization/8%20-%20Streamlit%201.png" width="45%" />
+  <img src="Data%20Visualization/8%20-%20Streamlit%202.png" width="45%" />
+</p>
+
+ How It Works:
 1. **User Input**: Users enter a movie name in the input field, and the system automatically retrieves relevant reviews using the TMDb API.
 2. **Sentiment Analysis**: The retrieved reviews are processed using a TF-IDF vectorizer and Logistic Regression model to classify them as positive or negative.
 3. **Results Display**: The system presents the number of positive and negative reviews, along with a bar chart visualization of the sentiment distribution.
