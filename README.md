@@ -84,7 +84,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 📍 Final model selection: **TF-IDF + Logistic Regression**, based on its consistency and superior performance across both traditional evaluation and LLM validation.
 
 ## 🖥️ User Interface Demo
- link: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysis-movie-reviews.streamlit.app/)
+ Try the app: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysis-movie-reviews.streamlit.app/)
 <p float="left">
   <img src="Data%20Visualization/8%20-%20Streamlit%201.jpg" width="45%" />
   <img src="Data%20Visualization/8%20-%20Streamlit%202.jpg" width="45%" />
