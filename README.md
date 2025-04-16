@@ -112,6 +112,11 @@ The project built a high-performing sentiment classifier using TF-IDF and Logist
 - **APIs** (TMDb API, OpenRouter API)
 
 ## 📂 Repository Files
-- `IMDB Dataset 2.csv` – IMDb movie reviews with sentiment labels
-- `imdb_sentiment_analysis.ipynb` - Main notebook for data preprocessing, model training, model evaluation, and Streamlit integration
-- `README.md` – Project documentation
+- `IMDB Dataset.csv` — IMDb movie reviews with sentiment labels  
+- `imdb_sentiment_analysis.ipynb` — Main notebook for data preprocessing, model training, and model evaluation  
+- `imdb_streamlit.py` — Streamlit script to deploy the sentiment analysis web app  
+- `log_reg_model.pkl` — Pre-trained Logistic Regression model for classifying sentiment  
+- `tfidf_vectorizer.pkl` — Fitted TF-IDF vectorizer used to transform review text for prediction  
+- `requirements.txt` — List of required Python packages for running the Streamlit app  
+- `Data Visualization/` — Folder containing visualizations (confusion matrices, ROC curves, comparison charts) used in the analysis  
+- `README.md` — Project documentation
