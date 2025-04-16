@@ -70,7 +70,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
   <img src="Data%20Visualization/5%20-%20ROC%20(WE).png" width="45%" />
 </p>
 
-- **LLM validation** confirmed that **TF-IDF features generalized better** (89% precision, AUC = 0.86) vs. Word Embeddings (50% precision, AUC = 0.52).
+- **LLM validation** confirmed that **TF-IDF features generalized better** (AUC = 0.86) vs. Word Embeddings (AUC = 0.52).
 <p float="left">
   <img src="Data%20Visualization/6%20-%20LLM%20CM(TF).png" width="45%" />
   <img src="Data%20Visualization/6%20-%20LLM%20ROC(TF).png" width="45%" />
@@ -109,7 +109,7 @@ The project built a high-performing sentiment classifier using TF-IDF and Logist
 - **Machine Learning** (Logistic Regression, SVM, Random Forest)
 - **Visualization** (Seaborn, Matplotlib)
 - **UI Deployment** (Streamlit)
-- **APIs** (TMDb API, OpenRouter API)
+- **APIs** (TMDb API, Together AI API)
 
 ## 📂 Repository Files
 - `IMDB Dataset.csv` — IMDb movie reviews with sentiment labels  
