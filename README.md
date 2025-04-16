@@ -70,7 +70,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
   <img src="Data%20Visualization/5%20-%20ROC%20(WE).png" width="45%" />
 </p>
 
-- **LLM validation** confirmed that **TF-IDF features generalized better** (AUC = 0.86) vs. Word Embeddings (AUC = 0.52).
+- **LLM validation** confirmed that **TF-IDF features generalized better (AUC = 0.86)** vs. Word Embeddings (AUC = 0.52).
 <p float="left">
   <img src="Data%20Visualization/6%20-%20LLM%20CM(TF).png" width="45%" />
   <img src="Data%20Visualization/6%20-%20LLM%20ROC(TF).png" width="45%" />
