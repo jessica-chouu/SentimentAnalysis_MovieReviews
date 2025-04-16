@@ -112,7 +112,7 @@ The project built a high-performing sentiment classifier using TF-IDF and Logist
 - **APIs** (TMDb API, Together AI API)
 
 ## 📂 Repository Files
-- `IMDB Dataset.csv` — IMDb movie reviews with sentiment labels  
+- `IMDB Dataset.csv.gz` — IMDb movie reviews with sentiment labels  
 - `imdb_sentiment_analysis.ipynb` — Main notebook for data preprocessing, model training, and model evaluation  
 - `imdb_streamlit.py` — Streamlit script to deploy the sentiment analysis web app  
 - `log_reg_model.pkl` — Pre-trained Logistic Regression model for classifying sentiment  
