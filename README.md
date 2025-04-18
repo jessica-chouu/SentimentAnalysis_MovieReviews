@@ -81,8 +81,8 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 ## 🖥️ User Interface Demo
  Try the app: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysis-movie-reviews.streamlit.app/)
 <div align="center">
-   <img src="Data%20Visualization/6%20-%20Streamlit%201.jpg" width="50%" /> 
-   <img src="Data%20Visualization/6%20-%20Streamlit%202.jpg" width="50%" />
+   <img src="Data%20Visualization/6%20-%20Streamlit%201.jpg" width="49%" /> 
+   <img src="Data%20Visualization/6%20-%20Streamlit%202.jpg" width="49%" />
 </div>
 
  How It Works:
