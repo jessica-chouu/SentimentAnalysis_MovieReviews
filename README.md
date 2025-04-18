@@ -3,6 +3,7 @@
 - Intelligent sentiment analysis system that can classify movie reviews as either positive or negative.
 - Leverage **NLP** and **Machine Learning** to develop a model that can automatically determine audience sentiment based on movie reviews.
 
+
 ## 📊 Dataset Description
 We used a **Kaggle dataset** and **TMDb API** for analysis:
 
@@ -51,6 +52,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 - Loaded a pre-trained **TF-IDF + Logistic Regression** model to classify review sentiment.
 - Displayed results as positive vs. negative percentages with a simple bar chart.
 
+
 ## 🔍 Key Findings
 - **TF-IDF + Logistic Regression achieved the highest accuracy (88.78%)**, followed by SVM (88.28%) and Random Forest (83.49%).
 <img src="Data%20Visualization/2%20-%20Camparison%20of%20model.png" width="500"/>
@@ -64,23 +66,14 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
   <img src="Data%20Visualization/4%20-%20ROC%20(TF).png" width="45%" />
 </p>
 
-<p float="left">
-  <img src="Data%20Visualization/5%20-%20CM%20(WE).png" width="45%" />
-  <img src="Data%20Visualization/5%20-%20ROC%20(WE).png" width="45%" />
-</p>
-
 - **LLM validation** confirmed that **TF-IDF features generalized better (AUC = 0.86)** vs. Word Embeddings (AUC = 0.52).
 <p float="left">
   <img src="Data%20Visualization/6%20-%20LLM%20CM(TF).png" width="45%" />
   <img src="Data%20Visualization/6%20-%20LLM%20ROC(TF).png" width="45%" />
 </p>
 
-<p float="left">
-  <img src="Data%20Visualization/7%20-%20LLM%20CM(WE).png" width="45%" />
-  <img src="Data%20Visualization/7%20-%20LLM%20ROC(WE).png" width="45%" />
-</p>
-
 📍 Final model selection: **TF-IDF + Logistic Regression**, based on its consistency and superior performance across both traditional evaluation and LLM validation.
+
 
 ## 🖥️ User Interface Demo
  Try the app: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysis-movie-reviews.streamlit.app/)
@@ -94,13 +87,16 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 2. **Sentiment Analysis**: The retrieved reviews are processed using a TF-IDF vectorizer(`tfidf_vectorizer.pkl`) and Logistic Regression model(`log_reg_model.pkl`) to classify them as positive or negative.
 3. **Results Display**: The system presents the number of positive and negative reviews, along with a bar chart visualization of the sentiment distribution.
 
+
 ## 📌 Conclusion
 The project built a high-performing sentiment classifier using TF-IDF and Logistic Regression. With real-time TMDb integration and a user-friendly Streamlit UI, this tool automates review analysis, offering practical value to media, film, and marketing professionals.
+
 
 ## 🚀 Strategic Opportunities
 - Apply sentiment insights to optimize promotional timing, messaging, and competitor benchmarking.
 - Extend functionality by integrating topic modeling to extract trending themes from reviews.
 - Explore multilingual sentiment classification to expand market coverage and global usability.
+
 
 ## 🛠 Technologies Used
 - **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Joblib)
@@ -109,6 +105,7 @@ The project built a high-performing sentiment classifier using TF-IDF and Logist
 - **Visualization** (Seaborn, Matplotlib)
 - **UI Deployment** (Streamlit)
 - **APIs** (TMDb API, Together AI API)
+
 
 ## 📂 Repository Files
 - `IMDB Dataset.csv.gz` — IMDb movie reviews with sentiment labels  
