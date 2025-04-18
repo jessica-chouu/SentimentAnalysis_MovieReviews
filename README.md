@@ -2,7 +2,7 @@
 ## 🎯 Project Purpose
 - Intelligent sentiment analysis system that can classify movie reviews as either positive or negative.
 - Leverage **NLP** and **Machine Learning** to develop a model that can automatically determine audience sentiment based on movie reviews.
-
+<br>
 
 ## 📊 Dataset Description
 We used a **Kaggle dataset** and **TMDb API** for analysis:
