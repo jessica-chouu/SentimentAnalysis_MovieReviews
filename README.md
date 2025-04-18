@@ -53,6 +53,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 - Loaded a pre-trained **TF-IDF + Logistic Regression** model to classify review sentiment.
 - Displayed results as positive vs. negative percentages with a simple bar chart.
 
+<br>
 
 ## 🔍 Key Findings
 - **TF-IDF + Logistic Regression achieved the highest accuracy (88.78%)**, followed by SVM (88.28%) and Random Forest (83.49%).
@@ -75,6 +76,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 
 📍 Final model selection: **TF-IDF + Logistic Regression**, based on its consistency and superior performance across both traditional evaluation and LLM validation.
 
+<br>
 
 ## 🖥️ User Interface Demo
  Try the app: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysis-movie-reviews.streamlit.app/)
@@ -88,16 +90,19 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 2. **Sentiment Analysis**: The retrieved reviews are processed using a TF-IDF vectorizer(`tfidf_vectorizer.pkl`) and Logistic Regression model(`log_reg_model.pkl`) to classify them as positive or negative.
 3. **Results Display**: The system presents the number of positive and negative reviews, along with a bar chart visualization of the sentiment distribution.
 
+<br>
 
 ## 📌 Conclusion
 The project built a high-performing sentiment classifier using TF-IDF and Logistic Regression. With real-time TMDb integration and a user-friendly Streamlit UI, this tool automates review analysis, offering practical value to media, film, and marketing professionals.
 
+<br>
 
 ## 🚀 Strategic Opportunities
 - Apply sentiment insights to optimize promotional timing, messaging, and competitor benchmarking.
 - Extend functionality by integrating topic modeling to extract trending themes from reviews.
 - Explore multilingual sentiment classification to expand market coverage and global usability.
 
+<br>
 
 ## 🛠 Technologies Used
 - **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Joblib)
@@ -107,6 +112,7 @@ The project built a high-performing sentiment classifier using TF-IDF and Logist
 - **UI Deployment** (Streamlit)
 - **APIs** (TMDb API, Together AI API)
 
+<br>
 
 ## 📂 Repository Files
 - `IMDB Dataset.csv.gz` — IMDb movie reviews with sentiment labels  
