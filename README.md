@@ -70,8 +70,8 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 
 - **LLM validation** confirmed that **TF-IDF features generalized better (AUC = 0.86)** vs. Word Embeddings (AUC = 0.52).
 <p float="left">
-  <img src="Data%20Visualization/6%20-%20LLM%20CM(TF).png" width="45%" />
-  <img src="Data%20Visualization/6%20-%20LLM%20ROC(TF).png" width="45%" />
+  <img src="Data%20Visualization/5%20-%20LLM%20CM(TF).png" width="45%" />
+  <img src="Data%20Visualization/5%20-%20LLM%20ROC(TF).png" width="45%" />
 </p>
 
 📍 Final model selection: **TF-IDF + Logistic Regression**, based on its consistency and superior performance across both traditional evaluation and LLM validation.
@@ -81,8 +81,8 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
 ## 🖥️ User Interface Demo
  Try the app: [🎬 IMDb Movie Review Sentiment Analysis](https://imdb-sentiment-analysis-movie-reviews.streamlit.app/)
 <div align="center">
-   <img src="Data%20Visualization/8%20-%20Streamlit%201.jpg" width="55%" /> 
-   <img src="Data%20Visualization/8%20-%20Streamlit%202.jpg" width="55%" />
+   <img src="Data%20Visualization/6%20-%20Streamlit%201.jpg" width="55%" /> 
+   <img src="Data%20Visualization/6%20-%20Streamlit%202.jpg" width="55%" />
 </div>
 
  How It Works:
