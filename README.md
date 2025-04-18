@@ -18,6 +18,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
  | `sentiment`      | Sentiment label: positive or negative            |
 
 <br>
+
 ## 💡 Methodology
 1️⃣ **Data Preprocessing**
 - Standardized and cleaned text data for consistency.
