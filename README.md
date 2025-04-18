@@ -17,7 +17,7 @@ We used a **Kaggle dataset** and **TMDb API** for analysis:
  | `review`         | Full text of the movie review                    |
  | `sentiment`      | Sentiment label: positive or negative            |
 
-
+<br>
 ## 💡 Methodology
 1️⃣ **Data Preprocessing**
 - Standardized and cleaned text data for consistency.
